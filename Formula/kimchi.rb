@@ -9,16 +9,16 @@ class Kimchi < Formula
 
   if OS.mac? && Hardware::CPU.arm?
     url "https://github.com/castai/kimchi/releases/download/v#{version}/kimchi_darwin_arm64.tar.gz"
-    sha256 "6554e34bfd5b75d82613199834b829ad23547412ffdeaa12a9ef2eed79186059"
+    sha256 "744f24b3ac2cc4e6bc489868b4a823534730475ffc28ce2bf02675840cd61b94"
   elsif OS.mac? && Hardware::CPU.intel?
     url "https://github.com/castai/kimchi/releases/download/v#{version}/kimchi_darwin_amd64.tar.gz"
-    sha256 "4ce0f0055bd450c11aba5cb55afb1b9e8f8700a1577bc23cdae6ff4cd0fa62c1"
+    sha256 "04a3c5adaba14dd8536c8aaee361030ef79e80211bc95600fe7fb85b0f75c722"
   elsif OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
     url "https://github.com/castai/kimchi/releases/download/v#{version}/kimchi_linux_arm64.tar.gz"
-    sha256 "c06c7ef90f46da1463de84ac5fc0bfa02c880f728936d6d28b27cc4eeb0f7456"
+    sha256 "7347b6ca42363b52b76d7c40f326f1f73117b09269cdddcff97f9a69d645a0af"
   elsif OS.linux? && Hardware::CPU.intel?
     url "https://github.com/castai/kimchi/releases/download/v#{version}/kimchi_linux_amd64.tar.gz"
-    sha256 "9d84e79972cef9ccbcc8c63fd08a21480a75f96462d0d772c7e5c4ec40d29a11"
+    sha256 "e104acfd396db2d64007833206e3f82a126aa66a1d5193f2acd16b363f9e308a"
   end
 
   def install
