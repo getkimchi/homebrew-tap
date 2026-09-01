@@ -4,21 +4,21 @@
 class Kimchi < Formula
   desc "A coding agent CLI powered by Cast AI"
   homepage "https://github.com/castai/kimchi"
-  version "1.0.9"
+  version "1.0.10"
   license "MIT"
 
   if OS.mac? && Hardware::CPU.arm?
     url "https://github.com/castai/kimchi/releases/download/v#{version}/kimchi_darwin_arm64.tar.gz"
-    sha256 "be016a962c0f856e01acd6f4ac71c10686183f3c7763ffcb65e7b96e593d9a78"
+    sha256 "9a22d3758cd6f2f548b831bf2f4b4d0befb3ae934ef662dca7bee5f71353d701"
   elsif OS.mac? && Hardware::CPU.intel?
     url "https://github.com/castai/kimchi/releases/download/v#{version}/kimchi_darwin_amd64.tar.gz"
-    sha256 "d285e4cfecce03fa965a31f9bb085bbeabb5a6cddad96dec3ebc57197a52e3b3"
+    sha256 "6110d19f76054a3326ee629d690964339d1c527519c5b61d32ef43f8e2a6c75e"
   elsif OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
     url "https://github.com/castai/kimchi/releases/download/v#{version}/kimchi_linux_arm64.tar.gz"
-    sha256 "d04b2b32062e62e3170246a64994bd10af2aada3e744a7bcc0c361b0def8abf5"
+    sha256 "bd20e53a0cae3f40d562d1bd7b05b0d4b1f0c46c9c59e3b1ebf6601f3c88f63a"
   elsif OS.linux? && Hardware::CPU.intel?
     url "https://github.com/castai/kimchi/releases/download/v#{version}/kimchi_linux_amd64.tar.gz"
-    sha256 "8558e91f109eafac82a21a0880a6853873bafed1e1998315e84a4c92ba7e791f"
+    sha256 "3584adbb12049d35e5e61e146578cb4a660e4a3a9d8d8bbfa326502c325a6594"
   end
 
   def install
