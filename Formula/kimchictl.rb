@@ -3,25 +3,25 @@
 class Kimchictl < Formula
   desc "CLI for kimchi remote workspaces"
   homepage "https://github.com/getkimchi/kimchictl"
-  version "0.0.24"
+  version "0.0.25"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/getkimchi/kimchictl/releases/download/0.0.24/kimchictl-darwin-arm64"
-      sha256 "4c1a930d651c17529f22330d6f904af8fbc2894ed3ca1e3d7e9b5028728f6d1a"
+      url "https://github.com/getkimchi/kimchictl/releases/download/0.0.25/kimchictl-darwin-arm64"
+      sha256 "f567788ad0ef0e2d1625b7c7b0d3805c26c70d441104e4743624480131c42aa6"
     else
-      url "https://github.com/getkimchi/kimchictl/releases/download/0.0.24/kimchictl-darwin-x64"
-      sha256 "5358368ffc9421717c5697ab73359263250f750e6033667b8061529a668bd3c2"
+      url "https://github.com/getkimchi/kimchictl/releases/download/0.0.25/kimchictl-darwin-x64"
+      sha256 "d3870d86a30517ae39e809786284b3f3fa366d29dc23cf5e58a3f6a75f42c072"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/getkimchi/kimchictl/releases/download/0.0.24/kimchictl-linux-arm64"
-      sha256 "30e0e2b9daf883f85015550f5c7ba5f74c84b972dc53af9682f0afb11147d791"
+      url "https://github.com/getkimchi/kimchictl/releases/download/0.0.25/kimchictl-linux-arm64"
+      sha256 "8e2661f2ed5ed0daa5361ebffab46f518d04adf63fa4042b58061c6a2a7816b1"
     else
-      url "https://github.com/getkimchi/kimchictl/releases/download/0.0.24/kimchictl-linux-x64"
-      sha256 "16a4f32622f77c5110627aeb918eed971871d091d35695d6f32698158d1cdf7d"
+      url "https://github.com/getkimchi/kimchictl/releases/download/0.0.25/kimchictl-linux-x64"
+      sha256 "7f348cece09d975e6d5e1e15c0cf402f0a47f88c0c74de2f065b317d562dd820"
     end
   end
 
